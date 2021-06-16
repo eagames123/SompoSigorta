@@ -1,0 +1,91 @@
+﻿@model SompoSigorta.Project.Web.UI.Models.HomeIndexViewModel
+
+@{
+    Layout = null;
+    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+    @addTagHelper *, AuthoringTagHelpers
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sompo Sigorta Teklif Formu Çalışma Tüm Teklif Listesi</title>
+    <link href="/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.getRequest').click(function (e) {
+                e.preventDefault();
+                var id = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Home/GetRequestForDialog?id=" + id,
+                    type: "post",
+                    success: function (data) {
+                        $("#dialog").empty();
+                        $("#dialog").append(JSON.stringify(data));
+                        $("#dialog").dialog();
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert("Problem!")
+                    }
+                });
+            });
+
+            $('.getResponse').click(function (e) {
+                e.preventDefault();
+                var id = $(this).attr("data-id");
+                $.ajax({
+                    url: "/Home/GetResponseForDialog?id=" + id,
+                    type: "post",
+                    success: function (data) {
+                        $("#dialog").empty();
+                        $("#dialog").append(JSON.stringify(data));
+                        $("#dialog").dialog();
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert("Problem!")
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="form-style-2">
+        <a class="button" asp-controller="Home" asp-action="Index">Geri Dön</a>
+    </div>
+    <hr />
+    <table class="tableAllList">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Teklif Numarası</td>
+                <td>Yenileme Numarası</td>
+                <td>Zeyil Numarası</td>
+                <td>Ürün Numarası</td>
+                <td>İstek</td>
+                <td>Yanıt</td>
+                <td>Oluşturulma Tarihi</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ProposalList)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.ProposalNo</td>
+                    <td>@item.RenewalNo</td>
+                    <td>@item.EndorsNo</td>
+                    <td>@item.ProductNo</td>
+                    <td><a href="javascript:void(0);" class="getRequest" data-id="@item.Id">İstek Detayı</a></td>
+                    <td><a href="javascript:void(0);" class="getResponse" data-id="@item.Id">Yanıt Detayı</a></td>
+                    <td>@item.Created</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div id="dialog" title="Detail"></div>
+</body>
+</html>

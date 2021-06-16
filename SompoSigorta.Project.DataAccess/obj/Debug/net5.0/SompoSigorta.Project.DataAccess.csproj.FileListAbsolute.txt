@@ -1,0 +1,17 @@
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Project.DataAccess.deps.json
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Project.DataAccess.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\ref\SompoSigorta.Project.DataAccess.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Project.DataAccess.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.csproj.AssemblyReference.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.AssemblyInfoInputs.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.AssemblyInfo.cs
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\ref\SompoSigorta.Project.DataAccess.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Core.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Project.Entities.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Core.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\bin\Debug\net5.0\SompoSigorta.Project.Entities.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.DataAccess\obj\Debug\net5.0\SompoSigorta.Project.DataAccess.csproj.CopyComplete

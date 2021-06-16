@@ -1,0 +1,15 @@
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\SompoSigorta.Project.Entities.deps.json
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\SompoSigorta.Project.Entities.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\ref\SompoSigorta.Project.Entities.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\SompoSigorta.Project.Entities.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.csproj.AssemblyReference.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.AssemblyInfoInputs.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.AssemblyInfo.cs
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.csproj.CoreCompileInputs.cache
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\ref\SompoSigorta.Project.Entities.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\SompoSigorta.Core.dll
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\bin\Debug\net5.0\SompoSigorta.Core.pdb
+C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Project.Entities\obj\Debug\net5.0\SompoSigorta.Project.Entities.csproj.CopyComplete
