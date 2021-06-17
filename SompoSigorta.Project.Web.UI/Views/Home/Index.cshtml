@@ -1,90 +1,17 @@
-﻿@{
-    Layout = null;
-    @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-    @addTagHelper *, AuthoringTagHelpers
+﻿
+@await Component.InvokeAsync("Search")
+
+<hr />
+
+@await Component.InvokeAsync("Result")
+
+@section Css
+{
+    <link href="/css/site.css" rel="stylesheet" asp-append-version="true" />
 }
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Sompo Sigorta Teklif Formu Sorgulama Çalışması</title>
-    <link href="/css/site.css" rel="stylesheet" />
+
+@section Script
+{
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/site.js"></script>    
-</head>
-<body>
-
-    <div class="form-style-2">
-        <div class="form-style-2-heading">Teklif Formu Sorgulama Ekranı</div>
-        <label for="field1">
-            <span>Ürün Numarası</span>
-            <input type="text" class="input-field" id="urunNo" value="112" />
-        </label>
-        <label for="field1">
-            <span>Teklif Numarası</span>
-            <input type="text" class="input-field" id="teklifNo" value="200200022183057" />
-        </label>
-        <label for="field1">
-            <span>Yenileme Numarası</span>
-            <input type="text" class="input-field" id="yenilemeNo" value="0" />
-        </label>
-        <label for="field1">
-            <span>Zeyil Numarası</span>
-            <input type="text" class="input-field" id="zeyilNo" value="0" />
-        </label>
-        <label>
-            <a class="submitBtn sendFrom" href="javascript:void(0);" id="sendRequest">Sorgula</a>
-        </label>
-    </div>
-
-    <div class="form-style-2">
-        <a class="button" asp-controller="Home" asp-action="GetAllResult">Yapılan Sorguları Görüntülemek için tıklayınız</a>
-    </div>
-
-    <hr />
-
-    <table>
-        <thead>
-            <tr>
-                <th class="txtCen" colspan="3">Olumlu</th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th>Kod</th>
-                <th>Açıklama</th>
-            </tr>
-        </thead>
-        <tbody id="olumluTable"></tbody>
-    </table>
-
-    <table>
-        <thead>
-            <tr>
-                <th class="txtCen" colspan="3">Bilgi</th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th>Kod</th>
-                <th>Açıklama</th>
-            </tr>
-        </thead>
-        <tbody id="bilgiTable"></tbody>
-    </table>
-
-    <table>
-        <thead>
-            <tr>
-                <th class="txtCen" colspan="3">Olumsuz</th>
-            </tr>
-        </thead>
-        <thead>
-            <tr>
-                <th>Kod</th>
-                <th>Açıklama</th>
-            </tr>
-        </thead>
-        <tbody id="olumsuzTable"></tbody>
-    </table>
-
-</body>
-</html>
+    <script src="/js/site.js" asp-append-version="true"></script>
+}

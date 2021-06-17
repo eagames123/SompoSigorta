@@ -3,7 +3,7 @@ using SompoSigorta.Project.Business.Abstract;
 using SompoSigorta.Project.Entities.Concrete;
 using SompoSigorta.Project.Web.UI.Models;
 using System.Collections.Generic;
-using static SompoSigorta.Project.Entities.EngineAPI.ApiResponse;
+using SompoSigorta.Project.Entities.EngineAPI;
 
 namespace SompoSigorta.Project.Web.UI.Controllers
 {
@@ -17,14 +17,14 @@ namespace SompoSigorta.Project.Web.UI.Controllers
         }
 
         public IActionResult Index()
-        {   
+        {
             return View();
         }
 
         [HttpPost]
         public IActionResult SendProposal([FromBody] Proposal model)
         {
-            List<Result> result = _proposalService.Insert(model);
+            List<ApiResponse.Result> result = _proposalService.Insert(model);
 
             return Json(result);
         }
@@ -55,7 +55,7 @@ namespace SompoSigorta.Project.Web.UI.Controllers
             };
 
             return View(homeIndexViewModel);
-        }        
+        }
 
     }
 }

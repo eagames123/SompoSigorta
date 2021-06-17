@@ -3,24 +3,20 @@ using RestSharp;
 using SompoSigorta.Project.Business.Abstract;
 using SompoSigorta.Project.DataAccess.Abstract;
 using SompoSigorta.Project.Entities.Concrete;
+using SompoSigorta.Project.Entities.EngineAPI;
 using System.Collections.Generic;
-using static SompoSigorta.Project.Entities.EngineAPI.ApiResponse;
 
 namespace SompoSigorta.Project.Business.Concrete
 {
     public class ProposalManager : IProposalService
     {
-        private readonly IProposalDal _proposalDal;       
+        private readonly IProposalDal _proposalDal;
 
         public ProposalManager(IProposalDal proposalDal)
         {
-            _proposalDal = proposalDal;            
+            _proposalDal = proposalDal;
         }
 
-        /// <summary>
-        /// Tüm teklifleri getiren metod
-        /// </summary>
-        /// <returns>List<Proposal></returns>
         public List<Proposal> GetAllList()
         {
             List<Proposal> proposalList = _proposalDal.GetAll("Select * From [dbo].[Proposals] WITH(NOLOCK)");
@@ -28,11 +24,6 @@ namespace SompoSigorta.Project.Business.Concrete
             return proposalList;
         }
 
-        /// <summary>
-        /// Teklif detayını getiren metod
-        /// </summary>
-        /// <param name="model">Proposal</param>
-        /// <returns>Proposal</returns>
         public Proposal GetDetail(int id)
         {
             if (id == 0) return new Proposal();
@@ -42,16 +33,9 @@ namespace SompoSigorta.Project.Business.Concrete
             return proposal;
         }
 
-        /// <summary>
-        /// Teklif ekleme işlemini yapan metod
-        /// ApiHelper aracılığı ile ilgili apiye istek atıp ekleme işlemi yapıyoruz
-        /// Sonra kendi db mize yazıyoruz
-        /// </summary>
-        /// <param name="model">Proposal</param>
-        /// <returns>Proposal</returns>
-        public List<Result> Insert(Proposal model)
+        public List<ApiResponse.Result> Insert(Proposal model)
         {
-            if (model.ProposalNo < 0 || model.RenewalNo < 0 || model.EndorsNo < 0 || string.IsNullOrEmpty(model.ProductNo)) return new List<Result>();
+            if (model.ProposalNo < 0 || model.RenewalNo < 0 || model.EndorsNo < 0 || string.IsNullOrEmpty(model.ProductNo)) return new List<ApiResponse.Result>();
 
             int rowId = _proposalDal.Insert($"INSERT INTO [dbo].[Proposals] ([ProposalNo] ,[RenewalNo] ,[EndorsNo] ,[ProductNo],[ApiRequest],[ApiResponse]) VALUES ({model.ProposalNo} ,{model.RenewalNo} ,{model.EndorsNo} ,N'{model.ProductNo}',N'{model.ApiRequest}',N'{model.ApiResponse}'); SELECT CAST(SCOPE_IDENTITY() as int)");
 
@@ -73,18 +57,13 @@ namespace SompoSigorta.Project.Business.Concrete
 
             UpdateResponse(rowId, JsonConvert.SerializeObject(request.Body), response.Content);
 
-            Root apiResponse = JsonConvert.DeserializeObject<Root>(response.Content);
+            ApiResponse.Root apiResponse = JsonConvert.DeserializeObject<ApiResponse.Root>(response.Content);
 
             #endregion
 
             return apiResponse.Results;
         }
 
-        /// <summary>
-        /// Teklif güncelleme işlemini yapan metod
-        /// </summary>
-        /// <param name="model">Proposal</param>
-        /// <returns>Proposal</returns>
         public int Update(Proposal model)
         {
             if (model.Id == 0 || model.ProposalNo < 0 || model.RenewalNo < 0 || model.EndorsNo < 0 || string.IsNullOrEmpty(model.ProductNo)) return 0;
@@ -93,12 +72,7 @@ namespace SompoSigorta.Project.Business.Concrete
 
             return result;
         }
-        /// <summary>
-        /// Son Eklenen datanın istek ve yanıt bilgileri güncellenmekte
-        /// </summary>
-        /// <param name="Id">Son eklenen Id</param>
-        /// <param name="apiRequest">istek</param>
-        /// <param name="apiResponse">geri dönen yanıt</param>
+
         public void UpdateResponse(int Id, string apiRequest, string apiResponse)
         {
             try
@@ -108,11 +82,6 @@ namespace SompoSigorta.Project.Business.Concrete
             catch { }
         }
 
-        /// <summary>
-        /// Teklif silme işlemini yapan metod
-        /// </summary>
-        /// <param name="model">Proposal</param>
-        /// <returns>Proposal</returns>
         public int Delete(Proposal model)
         {
             if (model.Id == 0) return 0;
@@ -121,6 +90,6 @@ namespace SompoSigorta.Project.Business.Concrete
 
             return result;
         }
-                
+
     }
 }

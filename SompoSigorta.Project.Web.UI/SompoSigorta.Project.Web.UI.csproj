@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shared\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SompoSigorta.Project.Business\SompoSigorta.Project.Business.csproj" />
   </ItemGroup>
 

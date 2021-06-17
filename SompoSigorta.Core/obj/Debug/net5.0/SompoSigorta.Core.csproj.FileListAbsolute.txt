@@ -9,3 +9,15 @@ C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Core\obj\Debug\net5.0\Som
 C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.dll
 C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Core\obj\Debug\net5.0\ref\SompoSigorta.Core.dll
 C:\Users\nakres\source\repos\SompoSigorta\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.pdb
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\bin\Debug\net5.0\SompoSigorta.Core.deps.json
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\bin\Debug\net5.0\SompoSigorta.Core.dll
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\bin\Debug\net5.0\ref\SompoSigorta.Core.dll
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\bin\Debug\net5.0\SompoSigorta.Core.pdb
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.csprojAssemblyReference.cache
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.AssemblyInfoInputs.cache
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.AssemblyInfo.cs
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.csproj.CoreCompileInputs.cache
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.dll
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\ref\SompoSigorta.Core.dll
+C:\Users\erkan.salihoglu\Downloads\SompoSigorta-master\SompoSigorta-master\SompoSigorta.Core\obj\Debug\net5.0\SompoSigorta.Core.pdb

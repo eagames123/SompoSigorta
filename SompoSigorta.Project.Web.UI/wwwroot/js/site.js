@@ -1,5 +1,14 @@
 ﻿$(document).ready(function () {
+    $(".resultSide").css("display", "none");
+
     $('#sendRequest').click(function (e) {
+
+        var element = $(this);
+
+        var currentText = element.html();
+
+        element.html("Sonuçlar Yükleniyor...");
+
         e.preventDefault();
         var result = true;
         var checkUrunVal = $("#urunNo").val();
@@ -25,6 +34,10 @@
                     contentType: 'application/json',
                     data: JSON.stringify(model),
                     success: function (data) {
+                        element.html(currentText);
+
+                        $(".resultSide").fadeIn().delay(100).fadeOut(100).delay(100).fadeIn(100);
+
                         $("#olumluTable").empty();
                         $("#bilgiTable").empty();
                         $("#olumsuzTable").empty();

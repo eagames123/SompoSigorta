@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,10 +7,6 @@ using SompoSigorta.Project.Business.Abstract;
 using SompoSigorta.Project.Business.Concrete;
 using SompoSigorta.Project.DataAccess.Abstract;
 using SompoSigorta.Project.DataAccess.Concrete.Dapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace SompoSigorta.Project.Web.UI
 {
@@ -24,7 +19,7 @@ namespace SompoSigorta.Project.Web.UI
             Configuration = configuration;
             _environment = environment;
         }
-       
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.

@@ -7,13 +7,16 @@ namespace SompoSigorta.Project.Entities.EngineAPI
         public class Status
         {
             public string Value { get; set; }
+           
             public string Name { get; set; }
         }
 
         public class Result
         {
             public string Code { get; set; }
+          
             public string Description { get; set; }
+            
             public Status Status { get; set; }
         }
 
